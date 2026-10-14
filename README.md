@@ -9,6 +9,7 @@ Una volta sola, nel terminale:
 ```
 claude plugin marketplace add StraordinaryAS/claude-mods
 claude plugin install guardia-regole@ale-mods
+claude plugin install tipografia-it@ale-mods
 ```
 
 Dentro una sessione Claude Code: `/plugin install guardia-regole --marketplace StraordinaryAS/claude-mods`
@@ -22,6 +23,11 @@ Aggiornare dopo nuove versioni: `claude plugin marketplace update ale-mods`, poi
 | Mod | Cosa fa |
 | --- | --- |
 | `guardia-regole` | Blocca commit e push su `main`/`master` e i segreti in chiaro (token, chiavi, password) nei file scritti da Claude. I file `.env` sono ammessi. |
+| `tipografia-it` | Skill con le regole di tipografia italiana per documenti, PDF e web: righe isolate, spazi, trattini, caporali, apostrofo ’, accenti, font e interlinea. |
+
+## Skill nella chat claude.ai
+
+I plugin non arrivano nella chat di claude.ai. Per avere `tipografia-it` anche lì, comprimi la cartella `mods/tipografia-it/skills/tipografia-it` in uno zip e caricalo da **Impostazioni › Funzionalità › Skill › Carica skill**.
 
 ## Aggiungere un mod
 
