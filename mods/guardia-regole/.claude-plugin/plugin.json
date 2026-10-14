@@ -1,0 +1,6 @@
+{
+  "name": "guardia-regole",
+  "version": "0.1.0",
+  "author": { "name": "Ale" },
+  "description": "Blocca commit e push su main/master e i segreti in chiaro nei file scritti da Claude"
+}
