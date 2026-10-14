@@ -14,6 +14,11 @@
       "name": "scelta-modello",
       "source": "./mods/scelta-modello",
       "description": "Sceglie Haiku, Sonnet o Opus per ogni richiesta con regole fisse, per risparmiare token"
+    },
+    {
+      "name": "tipografia-it",
+      "source": "./mods/tipografia-it",
+      "description": "Regole di tipografia italiana per documenti, PDF e pagine web"
     }
   ]
 }
