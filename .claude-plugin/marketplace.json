@@ -1,8 +1,19 @@
 {
   "name": "ale-mods",
   "description": "I mods di Ale per Claude Code: regole omogenee in ogni progetto",
-  "owner": { "name": "Ale" },
+  "owner": {
+    "name": "Ale"
+  },
   "plugins": [
-    { "name": "guardia-regole", "source": "./mods/guardia-regole", "description": "Blocca commit e push su main/master e i segreti in chiaro nei file scritti da Claude" }
+    {
+      "name": "guardia-regole",
+      "source": "./mods/guardia-regole",
+      "description": "Blocca commit e push su main/master e i segreti in chiaro nei file scritti da Claude"
+    },
+    {
+      "name": "scelta-modello",
+      "source": "./mods/scelta-modello",
+      "description": "Sceglie Haiku, Sonnet o Opus per ogni richiesta con regole fisse, per risparmiare token"
+    }
   ]
 }

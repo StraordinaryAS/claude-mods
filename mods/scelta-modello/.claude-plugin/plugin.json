@@ -1,0 +1,6 @@
+{
+  "name": "scelta-modello",
+  "version": "0.1.0",
+  "author": { "name": "Ale" },
+  "description": "Sceglie Haiku, Sonnet o Opus per ogni richiesta con regole fisse, per risparmiare token"
+}
