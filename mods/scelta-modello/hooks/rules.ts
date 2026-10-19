@@ -3,8 +3,15 @@
 
 export type Tier = 'haiku' | 'sonnet' | 'opus'
 
-/** Nome passato al motore per ogni livello (alias o id completo). */
-export const MODEL: Record<Tier, string> = { haiku: 'haiku', sonnet: 'sonnet', opus: 'opus' }
+/**
+ * Id completo passato al motore per ogni livello.
+ * Gli alias ('sonnet') non funzionano ovunque: in VS Code danno "model may not exist".
+ */
+export const MODEL: Record<Tier, string> = {
+  haiku: 'claude-haiku-5-5',
+  sonnet: 'claude-sonnet-5-5',
+  opus: 'claude-opus-5-5',
+}
 
 const RANK: Record<Tier, number> = { haiku: 0, sonnet: 1, opus: 2 }
 
