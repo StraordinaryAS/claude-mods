@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'claude-code/testing'
-import { choose, keepForCache } from '../hooks/rules'
+import { choose, keepForCache, MODEL } from '../hooks/rules'
 
 describe('regole', () => {
   test('piano e bug vanno su opus', async () => {
@@ -30,6 +30,12 @@ describe('regole', () => {
     expect(keepForCache('haiku', 'opus', 80)).toBe(true)
     expect(keepForCache('haiku', 'opus', 10)).toBe(false)
     expect(keepForCache('opus', 'haiku', 80)).toBe(false)
+  })
+})
+
+describe('modelli', () => {
+  test('ogni livello usa un id completo, non un alias', async () => {
+    for (const id of Object.values(MODEL)) expect(id.startsWith('claude-')).toBe(true)
   })
 })
 
